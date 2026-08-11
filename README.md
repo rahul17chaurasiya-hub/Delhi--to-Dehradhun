@@ -1,29 +1,37 @@
 Delhi–Dehradun Expressway Simulation (C++)
+
+
+
 CLI-based smart highway simulation inspired by the Delhi–Dehradun Expressway.
 
 Modules
+
+
 Graph (include/Graph.hpp, src/Graph.cpp)
 
-Adjacency list representation of cities (nodes) and roads (edges).
-Dijkstra shortest path by distance/time/toll using a min-heap.
-Bellman-Ford negative cycle detection (fuel arbitrage scenario).
-Kruskal MST using DSU.
-Edge (include/Edge.hpp)
-
-Stores distance, time, toll plus a stable id.
-DSU (include/DSU.hpp, src/DSU.cpp)
-
-Disjoint Set Union for Kruskal.
-FenwickTree (include/FenwickTree.hpp, src/FenwickTree.cpp)
-
-Point update + range sum queries over edge toll values.
-BloomFilter (include/BloomFilter.hpp, src/BloomFilter.cpp)
-
-Probabilistic vehicle pass tracking.
+  .Adjacency list representation of cities (nodes) and roads (edges).
+  .Dijkstra shortest path by distance/time/toll using a min-heap.
+  .Bellman-Ford negative cycle detection (fuel arbitrage scenario).
+  .Kruskal MST using DSU.
+  
+.Edge (include/Edge.hpp)
+     .Stores distance, time, toll plus a stable id.
+     
+.DSU (include/DSU.hpp, src/DSU.cpp)
+      .Disjoint Set Union for Kruskal.
+      
+.FenwickTree (include/FenwickTree.hpp, src/FenwickTree.cpp)
+    .Point update + range sum queries over edge toll values.
+    
+.BloomFilter (include/BloomFilter.hpp, src/BloomFilter.cpp)
+   .Probabilistic vehicle pass tracking.
+   
 Input file
 Place expressway.txt next to the executable (or run from the project folder). The sample file is included.
 
 Build and run (Windows, PowerShell)
+
+
 From DelhiDehradunExpresswaySimCPP:
 
 cmake -S . -B build
